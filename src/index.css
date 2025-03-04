@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme{
+    --color-description-500: rgba(40, 40, 40, 0.977);
+
+}
+  
+  
