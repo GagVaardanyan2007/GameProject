@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function LeaderBoardCard({ data }) {
+export default function LeaderBoardCard( { data } ) {
   const [openIndex, setOpenIndex] = useState(null);
 
   function toggleOpen(index) {
@@ -25,8 +25,8 @@ export default function LeaderBoardCard({ data }) {
               <p className="text-gray-400 font-bold">{elem.description}</p>
               <button
                 onClick={() => toggleOpen(index)}
-                className="relative border-2 border-yellow-600 rounded-4xl shadow-xl shadow-black font-bold uppercase
-                    bg-gray-600/25 hover:bg-yellow-600 hover:text-white transition-colors duration-500 w-fit px-6 mx-auto py-2 flex items-center gap-3"
+                className="relative border-2 border-yellow-600  rounded-4xl shadow-xl shadow-black font-bold uppercase
+                    bg-gray-200/80 hover:bg-yellow-600 hover:text-white transition-colors duration-500 w-fit px-6 mx-auto py-2 flex items-center gap-3"
               >
                 {elem.btnTitle} {elem.icon}
               </button>
