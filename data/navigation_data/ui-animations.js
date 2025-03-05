@@ -1,0 +1,20 @@
+export const uiAnimation = {
+    link:[
+        {
+            title:"faceBook",
+            path:""
+        },
+        {
+            title:"faceBook",
+            path:""
+        },
+        {
+            title:"faceBook",
+            path:""
+        },
+        {
+            title:"faceBook",
+            path:""
+        },
+    ]
+}

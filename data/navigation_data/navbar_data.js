@@ -13,16 +13,15 @@ export const navbar = {
         { title: "Help", path: "/help" },
         { title: "About", path: "/about" },
     ],
- 
     icons: [
         { 
-            icon:  MdOutlineMenuOpen(), action: "Menu" 
+        icon:  MdOutlineMenuOpen(), action: "Menu" 
         },
         { 
         icon: LuSunMoon(), action: "toggleTheme"
-         },
+        },
         { 
-            icon: IoMdLogIn(), action: "Log-in" 
+        icon: IoMdLogIn(), action: "Log-in" 
         },
         
     ],
