@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function LinksAnimationBar() {
+export default function UIAnimations() {
   return (
     <div>
       
