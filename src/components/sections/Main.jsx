@@ -6,15 +6,17 @@ import { news } from '../../../data/mainSection/news_data'
 import AboutUs from './mainSections/AboutUs'
 import NewsSection from './mainSections/NewsSection'
 import LeaderBoard from './mainSections/leaderBoardSection/LeaderBoard'
-import LinksAnimationBar from '../navigation/UIAnimations.jsx'
+import UIAnimations from '../navigation/uiAnimation/UIAnimations.jsx'
 
 export default function Main( { data } ) {
   return (
-    <div className='w-3/4 m-auto flex flex-col'>
+    <div className='w-3/4 mx-auto flex flex-col'>
        <AboutUs data={about}/>
-       <LinksAnimationBar data={uiAnimation}/>
+       <UIAnimations data={uiAnimation}/>
        <LeaderBoard data={leaderBoard}/>
+       <UIAnimations data={uiAnimation}/>
        <NewsSection data={news}/>
+       <UIAnimations data={uiAnimation}/>
     </div>
   )
 }
