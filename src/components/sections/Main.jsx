@@ -11,12 +11,7 @@ import UIAnimations from '../navigation/uiAnimation/UIAnimations.jsx'
 export default function Main( { data } ) {
   return (
     <div className='w-3/4 mx-auto flex flex-col'>
-       <AboutUs data={about}/>
-       <UIAnimations data={uiAnimation}/>
-       <LeaderBoard data={leaderBoard}/>
-       <UIAnimations data={uiAnimation}/>
-       <NewsSection data={news}/>
-       <UIAnimations data={uiAnimation}/>
+       
     </div>
   )
 }
