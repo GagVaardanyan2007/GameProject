@@ -4,5 +4,4 @@ export const hero = {
     description:"Here, you can play a variety of games, level up your skills, connect with other players, and dive into an exciting gaming community",  
     btnTitle:"Click Game",
     btnPath:"#"
-    
 }
