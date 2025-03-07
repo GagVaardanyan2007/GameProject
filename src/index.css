@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Titan+One&display=swap');
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Titan+One&display=swap');
 @theme{
     --color-description: rgba(40, 40, 40, 0.977);
-
-}
+    --font-titan: "Titan One", sans-serif;
+    --font-desc:"Alegreya", serif;
+    --font-subtitle:"Spectral", serif;
+} 
   
 .animate{
     animation: scrollAnimate 20s infinite  linear;
     left:-200px;
     
 }
+
+
 
 @keyframes scrollAnimate{
     100%{

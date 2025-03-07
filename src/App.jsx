@@ -5,7 +5,7 @@ import { news } from '../data/mainSection/news_data'
 import { uiAnimation } from '../data/navigation_data/ui-animations'
 import './App.css'
 import MainContainer from './components/containers/MainContainer'
-import UIAnimations from './components/navigation/uiAnimation/UIAnimations'
+import UIAnimations from './components/navigation/UIAnimations'
 import Hero from './components/sections/Hero'
 import AboutUs from './components/sections/mainSections/AboutUs'
 import LeaderBoard from './components/sections/mainSections/leaderBoardSection/LeaderBoard'
@@ -22,7 +22,6 @@ function App() {
         <MainContainer content={<LeaderBoard data={leaderBoard}/>} />
         <UIAnimations data={uiAnimation}/>
         <MainContainer content={<NewsSection data={news}/>} />
-        <UIAnimations data={uiAnimation}/>
     </>
   )
 }

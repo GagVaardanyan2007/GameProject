@@ -8,11 +8,11 @@ export default function LeaderBoardCard( { data } ) {
   }
 
   return (
-    <div className="flex justify-between text-center py-10">
+    <div className="flex justify-between gap-20 text-center ">
       {data.card.map((elem, index) => (
         <div
           key={index}
-          className="rounded-3xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-500 h-[550px] w-md shadow-black"
+          className="rounded-3xl shadow-xl overflow-hidden  hover:scale-105 transition-all duration-500 h-[550px] w-full shadow-black"
         >
           <div
             style={{ backgroundImage: elem.img }}
@@ -22,7 +22,7 @@ export default function LeaderBoardCard( { data } ) {
           >
             <div className="absolute backdrop-blur-lg w-full justify-center flex px-10 h-1/2 flex-col space-y-5">
               <h5 className="text-2xl font-bold text-white">{elem.subtitle}</h5>
-              <p className="text-gray-400 font-bold">{elem.description}</p>
+              <p className="font-desc font-bold text-xl text-des text-gray-400">{elem.description}</p>
               <button
                 onClick={() => toggleOpen(index)}
                 className="relative border-2 border-yellow-600  rounded-4xl shadow-xl shadow-black font-bold uppercase
