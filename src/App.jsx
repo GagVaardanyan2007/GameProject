@@ -1,5 +1,6 @@
 import { hero } from '../data/hero_section'
 import { about } from '../data/mainSection/about_data'
+import { event } from '../data/mainSection/event_data'
 import { leaderBoard } from '../data/mainSection/leaderBoard_data'
 import { news } from '../data/mainSection/news_data'
 import { uiAnimation } from '../data/navigation_data/ui-animations'
@@ -8,9 +9,9 @@ import MainContainer from './components/containers/MainContainer'
 import UIAnimations from './components/navigation/UIAnimations'
 import Hero from './components/sections/Hero'
 import AboutUs from './components/sections/mainSections/AboutUs'
+import Events from './components/sections/mainSections/Events'
 import LeaderBoard from './components/sections/mainSections/leaderBoardSection/LeaderBoard'
 import NewsSection from './components/sections/mainSections/NewsSection'
-
 function App() {
 
 
@@ -22,6 +23,7 @@ function App() {
         <MainContainer content={<LeaderBoard data={leaderBoard}/>} />
         <UIAnimations data={uiAnimation}/>
         <MainContainer content={<NewsSection data={news}/>} />
+        <MainContainer content={<Events data={event}/>} />
     </>
   )
 }
