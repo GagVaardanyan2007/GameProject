@@ -14,32 +14,58 @@ export const  event = {
                 title:"Anna",
                 gift:" Place: Nintendo Switch — A powerful gaming console for epic adventures!",
                 number:"text-cyan-600",
+                bgcolor:"bg-cyan-200/50"
             },
             {
                 img:"/public/mainSectionImages/eventImages/eventPlayersImg2.jpeg",
                 stNumber:"🥈2st.",
                 title:"Joy",
-                gift:"Place: Gaming Headset — Immerse yourself in crystal-clear sound and communicate like a pro!",
-                number:"text-yellow-400",
+                gift:"Gaming Headset — Crystal-clear sound and pro-level communication!",
+                number:"text-yellow-600",
+                bgcolor:"bg-yellow-200/50"
             },
             {
                 img:"/public/mainSectionImages/eventImages/eventPlayersImg3.jpeg",
                 stNumber:"🥉3st.",
                 title:"Sofa",
                 gift:"Place: PlayStation — A legendary console for unforgettable gaming moments!",
-                number:"text-gray-400",
+                number:"text-gray-600",
+                bgcolor:"bg-gray-300/50"
             },
         ],
     },
     NewEventsSection: {
         title:"Upcoming Events",
-        description:"In this section, we ve gathered all the upcoming events planned for the near future. Keep an eye on the schedule so you dont miss out on exciting events that everyone can participate in. Expect interesting challenges, new trials, and unique opportunities to earn rewards!",
+        description:"Check out the upcoming events and stay updated on the schedule to catch exciting challenges, trials, and rewards!",
         img:"/public/mainSectionImages/eventImages/eventImg2.jpeg",
         subtitle:"Tournament of the Strongest",
         subDescription:"Get ready for a grand challenge of strength and skill — the Tournament of the Strongest! Only the swiftest, bravest, and most unbeatable will rise above the rest and claim the champion's title. Challenge your opponents, showcase your abilities, and prove who the true leader is! Are you prepared to step into the arena and make your mark on history?",
+        gifts:[
+            
+                {
+                    text: "PC — A powerful computer for gaming and work.",
+                    stNumber: "🥇1st.",
+                    bgcolor: "bg-cyan-200/50",
+                    number: "text-cyan-600",
+                },
+                {
+                    text: "Laptop — A compact and stylish laptop for gaming and tasks.",
+                    stNumber: "🥈2nd.",
+                    bgcolor: "bg-yellow-200/50",
+                    number: "text-yellow-600",
+                },
+                {
+                    text: "Nintendo Switch — A gaming console for home and on-the-go fun!",
+                    stNumber: "🥉3rd.",
+                    bgcolor: "bg-gray-300/50",
+                    number: "text-gray-600",
+                },
+            
+        ],
         time:"400",
         btnTitle:"Participate",
         btnPath:""
-    }
     
+    
+    }
 }
