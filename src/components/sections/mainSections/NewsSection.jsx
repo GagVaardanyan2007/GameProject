@@ -5,8 +5,8 @@ export default function NewsSection( { data } ) {
     <div className='flex flex-col space-y-10'>
      <h1 className='font-subtitled font-bold text-6xl text-center'>{data.title}</h1>
       <div className='flex gap-20'>
-        <div className='min-w-2xl rounded-2xl shadow-xl shadow-black overflow-hidden'>
-          <img className='h-full transition-transform duration-500  hover:scale-110' src={data.img} alt="newsImg" />
+        <div className='min-w-2xl h-full rounded-2xl shadow-xl shadow-black overflow-hidden'>
+          <img className=' transition-transform duration-500  hover:scale-110' src={data.img} alt="newsImg" />
         </div>
           <div className='px-5 space-y-5 text-left'>
               <h5 className='text-gray-600 font-bold text-3xl mx-auto '>{data.subTitle}</h5>
