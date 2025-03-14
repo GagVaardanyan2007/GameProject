@@ -6,7 +6,7 @@ export default function Navbar( { data } ) {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <div className="z-50 flex fixed text-white bg-black/30 font-bold top-0 left-0  w-full not-lg:flex-col lg:justify-between 
+    <div className="z-50 flex fixed text-white bg-black/55 font-bold top-0 left-0  w-full not-lg:flex-col lg:justify-between 
     justify-center text-center items-center lg:px-10 py-5  fix gap-5">
       <img className='w-20 h-20' src={data.logo} alt="logo" />
           <div className={` ${isMenuOpen ? "flex " : "hidden" } not-lg:flex-col   lg:gap-12 md:gap-5 sm:gap-5 gap-4 font-sans  lg:flex    font-semibold   items-center text-xl uppercase`}>

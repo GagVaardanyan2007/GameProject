@@ -4,7 +4,7 @@ export const  event = {
     EndEventSection:{
         img:"/public/mainSectionImages/eventImages/eventImg.jpeg",
         title:"Last Completed Event",
-        description:"Here you ll find the latest completed event on our server. Check out the results and winners below! It was an exciting competition that brought the community together and showcased participants creativity. Were proud of their achievements and grateful to everyone involved. Stay tuned for more events and your chance to win!",
+        description:"Here you’ll find the latest completed event on our server! Check out the results and winners below. It was a fun competition that brought the community together, and we’re proud of everyone who took part. Stay tuned for more events!",
         btnTitle:"Learn More",
         btnPath:"",
         Winners:[
@@ -12,9 +12,9 @@ export const  event = {
                 img:"/public/mainSectionImages/eventImages/eventPlayersImg1.jpeg",
                 stNumber:"🥇1st.",
                 title:"Anna",
-                gift:" Place: Nintendo Switch — A powerful gaming console for epic adventures!",
+                gift:" Place: Nintendo Switch — A powerful gaming console for epic",
                 number:"text-cyan-600",
-                bgcolor:"bg-cyan-200/50"
+                bgColor:"bg-cyan-200/50"
             },
             {
                 img:"/public/mainSectionImages/eventImages/eventPlayersImg2.jpeg",
@@ -22,15 +22,15 @@ export const  event = {
                 title:"Joy",
                 gift:"Gaming Headset — Crystal-clear sound and pro-level communication!",
                 number:"text-yellow-600",
-                bgcolor:"bg-yellow-200/50"
+                bgColor:"bg-yellow-200/50"
             },
             {
                 img:"/public/mainSectionImages/eventImages/eventPlayersImg3.jpeg",
                 stNumber:"🥉3st.",
                 title:"Sofa",
-                gift:"Place: PlayStation — A legendary console for unforgettable gaming moments!",
+                gift:"Place: PlayStation — A legendary console for unforgettable gaming ",
                 number:"text-gray-600",
-                bgcolor:"bg-gray-300/50"
+                bgColor:"bg-gray-300/50"
             },
         ],
     },
@@ -45,24 +45,24 @@ export const  event = {
                 {
                     text: "PC — A powerful computer for gaming and work.",
                     stNumber: "🥇1st.",
-                    bgcolor: "bg-cyan-200/50",
+                    bgColor: "bg-cyan-200/50",
                     number: "text-cyan-600",
                 },
                 {
                     text: "Laptop — A compact and stylish laptop for gaming and tasks.",
                     stNumber: "🥈2nd.",
-                    bgcolor: "bg-yellow-200/50",
+                    bgColor: "bg-yellow-200/50",
                     number: "text-yellow-600",
                 },
                 {
                     text: "Nintendo Switch — A gaming console for home and on-the-go fun!",
                     stNumber: "🥉3rd.",
-                    bgcolor: "bg-gray-300/50",
+                    bgColor: "bg-gray-300/50",
                     number: "text-gray-600",
                 },
             
         ],
-        time:"400",
+        time:300,
         btnTitle:"Participate",
         btnPath:""
     
