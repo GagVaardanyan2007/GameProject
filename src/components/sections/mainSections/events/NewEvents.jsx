@@ -28,11 +28,11 @@ export default function NewEvents( { data }) {
                 </div>
               <div div className='justify-between grid grid-cols-2 gap-3'>
                 <button className='border-2 border-yellow-600 text-xl rounded-4xl shadow-xl shadow-black font-bold uppercase
-                bg-gray-200/80 hover:bg-yellow-600 hover:text-white justify-center  transition-colors duration-500  py-2 flex  gap-3'>
+                bg-gray-200/80 hover:bg-yellow-600 hover:text-white justify-center  transition-colors duration-500  py-3 flex  gap-3'>
                   {data.NewEventsSection.btnTitle}
                 </button>
                 <span className='border-2 border-yellow-600 text-xl rounded-4xl shadow-xl shadow-black font-bold uppercase
-                bg-gray-200/80 transition-colors duration-500  py-2 flex justify-center '>{data.NewEventsSection.time}</span>
+                bg-gray-200/80 transition-colors duration-500  py-3 flex justify-center '>{data.NewEventsSection.time}</span>
               </div>
             </div>
           </div>

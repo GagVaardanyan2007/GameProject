@@ -27,7 +27,7 @@ export default function EndEvents({ data }) {
               </div>
             ))}
           </div>
-          <button className='mt-4 border-2 border-yellow-600 text-xl rounded-full shadow-lg font-bold uppercase bg-gray-200 hover:bg-yellow-600 hover:text-white transition-colors duration-300 py-3 shadow-md shadow-black px-6'>
+          <button className='mt-4 border-2 border-yellow-600 text-xl rounded-full shadow-lg font-bold uppercase bg-gray-200 hover:bg-yellow-600 hover:text-white transition-colors duration-300 py-3 shadow-black px-6'>
             {data.EndEventSection.btnTitle}
           </button>
         </div>
