@@ -8,11 +8,18 @@ export default function NewsSection( { data } ) {
         <div className='min-w-2xl h-full rounded-2xl shadow-xl shadow-black overflow-hidden'>
           <img className=' transition-transform duration-500  hover:scale-110' src={data.img} alt="newsImg" />
         </div>
-          <div className='px-5 space-y-5 text-left'>
-              <h5 className='text-gray-600 font-bold text-3xl mx-auto '>{data.subTitle}</h5>
-              <p className='font-desc font-bold text-xl text-description'>{data.description}</p>
-              <button className='relative border-2 border-yellow-600 text-xl rounded-4xl shadow-xl shadow-black font-bold uppercase
-              bg-gray-200/80 hover:bg-yellow-600 hover:text-white transition-colors duration-500 w-fit px-12  py-3 flex items-center gap-3'>{data.btnTitle}</button>
+          <div className='px-5 space-y-5 text-left relative'>
+              <img src={data.newsSpeakImg} alt='newsSpeakImg' className='rounded-full w-16 border-1 border-black shadow-xl shadow-black absolute left-0 -top-5'/>
+              <div className='border-2 p-8 shadow-xl shadow-black rounded-xl space-y-3'>
+                <h5 className='text-gray-600 font-bold text-3xl mx-auto '>{data.subTitle}</h5>
+                <p className='font-desc font-bold text-xl text-description'>{data.description}</p>
+              </div>
+              <div className='justify-between grid grid-cols-2 gap-3'>
+                <button className='border-2 border-yellow-600 text-xl rounded-4xl shadow-xl shadow-black font-bold uppercase
+                bg-gray-200/80 hover:bg-yellow-600 hover:text-white justify-center  transition-colors duration-500  py-3 flex  items-center gap-3'>{data.btnTitle}</button>                
+                <button className='border-2 border-yellow-600 text-xl rounded-4xl shadow-xl shadow-black font-bold uppercase
+                bg-gray-200/80 hover:bg-yellow-600 hover:text-white justify-center  transition-colors duration-500  py-3 flex  items-center gap-3'>{data.btnReview}</button>                
+              </div>
           </div>
       </div>
     </div>
