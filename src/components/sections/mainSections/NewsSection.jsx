@@ -22,6 +22,7 @@ export default function NewsSection( { data } ) {
               </div>
           </div>
       </div>
+      
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Navbar( { data } ) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,13 +9,13 @@ export default function Navbar( { data } ) {
   return (
     <div className="z-50 flex fixed text-white bg-black/55 font-bold top-0 left-0  w-full not-lg:flex-col lg:justify-between 
     justify-center text-center items-center lg:px-10 py-5  fix gap-5">
-      <img className='w-20 h-20' src={data.logo} alt="logo" />
+      <img className='w-20 h-20 cursor-pointer ' src={data.logo} alt="logo" />
           <div className={` ${isMenuOpen ? "flex " : "hidden" } not-lg:flex-col   lg:gap-12 md:gap-5 sm:gap-5 gap-4 font-sans  lg:flex    font-semibold   items-center text-xl uppercase`}>
             {data.links.map((elem, index) => (
-            <a className={`${index == 0 ? "before:rounded-lg before:bg-yellow-600 before:w-full before:top-7 before:h-1 before:absolute" :
+            <Link  className={`${index == 0 ? "before:rounded-lg before:bg-yellow-600 before:w-full before:top-7 before:h-1 before:absolute" :
             "before:rounded-lg before:bg-yellow-600 before:w-0 before:top-7 before:h-1 before:absolute hover:before:w-full before:transition-all ease-in-out duration-1000"}
-             w-fit  relative`} key={index} href={elem.path}>{elem.title}
-             </a>
+             w-fit  relative`} key={index} to={elem.path}>{elem.title}
+             </Link>
              ))}
           </div>
           <div className='flex gap-6 '>
