@@ -12,12 +12,13 @@ export default function Navbar( { data } ) {
       <img className='w-20 h-20 cursor-pointer ' src={data.logo} alt="logo" />
           <div className={` ${isMenuOpen ? "flex " : "hidden" } not-lg:flex-col   lg:gap-12 md:gap-5 sm:gap-5 gap-4 font-sans  lg:flex    font-semibold   items-center text-xl uppercase`}>
             {data.links.map((elem, index) => (
-            <Link  className={`${index == 0 ? "before:rounded-lg before:bg-yellow-600 before:w-full before:top-7 before:h-1 before:absolute" :
+            <a  className={`${index == 0 ? "before:rounded-lg before:bg-yellow-600 before:w-full before:top-7 before:h-1 before:absolute" :
             "before:rounded-lg before:bg-yellow-600 before:w-0 before:top-7 before:h-1 before:absolute hover:before:w-full before:transition-all ease-in-out duration-1000"}
              w-fit  relative`} key={index} to={elem.path}>{elem.title}
-             </Link>
+             </a>
              ))}
           </div>
+          <a href='#section'>section</a>
           <div className='flex gap-6 '>
             {data.icons.map((elem, index) =>(
             <button  onClick={index === 0 ? toggleMenu : undefined} className={`${index == 0 ? "lg:hidden" : "flex"} 

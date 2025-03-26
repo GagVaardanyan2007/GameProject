@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NewsSection( { data } ) {
   return (
-    <div className='flex flex-col  gap-y-10  p-6 bg-gray-100 shadow-black rounded-2xl shadow-lg'>
+    <div id='section' className='flex flex-col  gap-y-10  p-6 bg-gray-100 shadow-black rounded-2xl shadow-lg'>
      <h1 className='font-subtitled font-bold text-6xl text-center'>{data.title}</h1>
       <div className='flex gap-20'>
         <div className='min-w-2xl h-full rounded-2xl shadow-xl shadow-black overflow-hidden'>

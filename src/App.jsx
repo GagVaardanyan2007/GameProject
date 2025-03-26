@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import { hero } from '../data/hero_section';
 import { about } from '../data/mainSection/about_data';
 import { donates } from '../data/mainSection/donateShop';
@@ -21,20 +21,20 @@ import Reviews from './components/sections/mainSections/Reviews';
 
 function App() {
   return (
-    <div className="scroll-smooth">
-      <Router>
+    <div >
+
         <Hero data={hero} />
-        <Routes>
-          <Route path="/" element={<MainContainer content={<AboutUs data={about} />} />} />
-          <Route path="/leaderboard" element={<MainContainer content={<LeaderBoard data={leaderBoard} />} />} />
-          <Route path="/news" element={<MainContainer content={<NewsSection data={news} />} />} />
-          <Route path="/events" element={<MainContainer content={<EndEvents data={event} />} />} />
-          <Route path="/new-events" element={<MainContainer content={<NewEvents data={event} />} />} />
-          <Route path="/donate" element={<MainContainer content={<DonateShop data={donates} />} />} />
-          <Route path="/reviews" element={<MainContainer content={<Reviews data={reviews} />} />} />
-        </Routes>
+
+          <MainContainer content={<AboutUs data={about} />} />
+          <MainContainer content={<LeaderBoard data={leaderBoard} />} />
+          <MainContainer content={<NewsSection data={news} />} />
+          <MainContainer content={<EndEvents data={event} />} />
+          <MainContainer content={<NewEvents data={event} />} />
+          <MainContainer content={<DonateShop data={donates} />} />
+          <MainContainer content={<Reviews data={reviews} />} />
+
         <UIAnimations data={uiAnimation} />
-      </Router>
+
     </div>
   );
 }
