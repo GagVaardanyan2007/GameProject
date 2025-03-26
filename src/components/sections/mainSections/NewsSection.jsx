@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function NewsSection( { data } ) {
   return (
-    <div className='flex flex-col  gap-y-10  p-6 bg-gray-100 shadow-black rounded-2xl shadow-lg'>
+    <div className='flex flex-col  gap-y-10  p-6 bg-gray-100 relative shadow-black rounded-2xl shadow-lg'>
      <h1 className='font-subtitled font-bold text-6xl text-center'>{data.title}</h1>
-      <div className='flex gap-20'>
-        <div className='min-w-2xl h-full rounded-2xl shadow-xl shadow-black overflow-hidden'>
+      <div className='xl:flex gap-20'>
+        <div className='xl:min-w-2xl h-full rounded-2xl shadow-xl shadow-black overflow-hidden'>
           <img className=' transition-transform duration-500  hover:scale-110' src={data.img} alt="newsImg" />
         </div>
-          <div className='px-5 space-y-5 text-left relative'>
-              <img src={data.newsSpeakImg} alt='newsSpeakImg' className='rounded-full w-16 border-1 border-black shadow-xl shadow-black absolute left-0 -top-5'/>
+          <div className='flex-col px-5 space-y-5 text-left xl:relative'>
+              <img src={data.newsSpeakImg} alt='newsSpeakImg' className='rounded-full w-16 border-1 border-black shadow-xl shadow-black xl:absolute left-0 -top-5'/>
               <div className='border-2 p-8 shadow-xl shadow-black rounded-xl space-y-3'>
                 <h5 className='text-gray-600 font-bold text-3xl mx-auto '>{data.subTitle}</h5>
                 <p className='font-desc font-bold text-xl text-description'>{data.description}</p>
