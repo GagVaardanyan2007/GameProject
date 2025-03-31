@@ -18,6 +18,7 @@ export default function Navbar( { data } ) {
              </a>
              ))}
           </div>
+          <a href='#section'>section</a>
           <div className='flex gap-6 '>
             {data.icons.map((elem, index) =>(
             <button  onClick={index === 0 ? toggleMenu : undefined} className={`${index == 0 ? "lg:hidden" : "flex"} 

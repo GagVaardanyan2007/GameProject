@@ -1,3 +1,4 @@
+
 import { hero } from '../data/hero_section'
 import { about } from '../data/mainSection/about_data'
 import { donates } from '../data/mainSection/donateShop'
@@ -12,7 +13,6 @@ import UIAnimations from './components/navigation/UIAnimations'
 import Hero from './components/sections/Hero'
 import AboutUs from './components/sections/mainSections/AboutUs'
 import DonateShop from './components/sections/mainSections/DonateShop'
-
 import EndEvents from './components/sections/mainSections/events/EndEvents'
 import NewEvents from './components/sections/mainSections/events/NewEvents'
 import LeaderBoard from './components/sections/mainSections/leaderBoardSection/LeaderBoard'
