@@ -5,14 +5,14 @@ import { MdOutlineMenuOpen } from "react-icons/md";
 
 export const navbar = {
     logo: "\gameslogo.jpeg",
+    homePageLink:'#home',
      links:[
-                { title: "About Us", path: "/" },
-                { title: "Leaderboard", path: "/leaderboard" },
-                { title: "News", path: "/news" },
-                { title: "Events", path: "/events" },
-                { title: "New Events", path: "/new-events" },
-                { title: "Donate", path: "/donate" },
-                { title: "Reviews", path: "/reviews" },
+                { title: "About Us", path: "#about" },
+                { title: "Leaderboard", path: "#leaderboard" },
+                { title: "News", path: "#news" },
+                { title: "Events", path: "#events" },
+                { title: "Donate", path: "#donate" },
+                { title: "Reviews", path: "#reviews" },
               ],
               
     icons: [

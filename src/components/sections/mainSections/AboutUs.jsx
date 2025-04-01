@@ -2,7 +2,7 @@
 
 export default function AboutUs( { data } ) {
   return (
-    <div className='flex flex-col w-full  text-center lg:gap-y-10  p-6 bg-gray-100 shadow-black rounded-2xl shadow-lg'>
+    <div id="about" className='flex flex-col w-full  text-center lg:gap-y-10  p-6 bg-gray-100 shadow-black rounded-2xl shadow-lg'>
       <h1 className='font-subtitled md:text-4xl text-2xl font-bold lg:text-6xl text-center'>{data.title}</h1>
         <div className='xl:flex space-y-5  xl:gap-20 items-center justify-between px-5'>
           <ul className={` list-disc flex flex-col gap-3  lg:gap-y-8`}>
