@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function EndEvents({ data }) {
   return (
-    <div className='space-y-10 p-6 bg-gray-100 shadow-black rounded-2xl shadow-lg'>
+    <div id='events' className='space-y-10 p-6 bg-gray-100 shadow-black rounded-2xl shadow-lg'>
       <div className='space-y-3 text-center'>
         <h1 className='font-subtitled font-bold text-6xl text-gray-800'>{data.title}</h1>
         <p className='font-desc font-bold text-xl text-gray-600'>{data.description}</p>
