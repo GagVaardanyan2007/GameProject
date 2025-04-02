@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 export default function Navbar({ data }) {
@@ -60,20 +61,21 @@ export default function Navbar({ data }) {
 
       <div className="flex gap-6">
         {data.icons.map((elem, index) => (
-          <a
-            href={elem.path}
-            onClick={(e) => {
-              e.preventDefault();
-              if (index === 1) toggleDarkMod();
-              if (index === 0) toggleMenu();
-            }}
-            className={`${index === 0 ? 'lg:hidden' : 'flex'} 
-            before:rounded-lg before:bg-yellow-600 before:w-0 before:top-14 relative before:h-1 before:absolute hover:before:w-full 
-            before:transition-all ease-in-out duration-1000 w-fit text-5xl`}
-            key={index}
-          >
-            {elem.icon}
-          </a>
+          <Link
+          to={index && elem.path}
+          onClick={(e) => {
+            if (index !== 2) e.preventDefault();
+            if (index === 1) toggleDarkMod();
+            if (index === 0) toggleMenu();
+          }}
+          className={`${index === 0 ? 'lg:hidden' : 'flex'} 
+          before:rounded-lg before:bg-yellow-600 before:w-0 before:top-14 relative before:h-1 before:absolute hover:before:w-full 
+          before:transition-all ease-in-out duration-1000 w-fit text-5xl`}
+          key={index}
+        >
+          {elem.icon}
+        </Link>
+        
         ))}
       </div>
     </div>

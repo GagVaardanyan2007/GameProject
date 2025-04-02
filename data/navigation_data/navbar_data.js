@@ -17,13 +17,15 @@ export const navbar = {
               
     icons: [
         { 
-        icon:  MdOutlineMenuOpen(), action: "Menu" 
+        icon:  MdOutlineMenuOpen(), action: "Menu",
+        path:"/"
         },
         { 
         icon: LuSunMoon(), action: "toggleTheme"
         },
         { 
-        icon: IoMdLogIn(), action: "Log-in" 
+        icon: IoMdLogIn(), action: "Log-in" ,
+        path:"/LogIn"
         },
         
     ],
