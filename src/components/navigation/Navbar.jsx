@@ -25,15 +25,12 @@ export default function Navbar({ data }) {
     <div className="z-50 flex fixed text-white bg-black/55 font-bold top-0 left-0 w-full not-lg:flex-col lg:justify-between 
     justify-center text-center items-center lg:px-10 py-5 fix gap-5">
       
-      <a
-        onClick={(e) => {
-          e.preventDefault();
-          document.documentElement.scrollIntoView({ behavior: 'smooth' });
-        }}
-        href={data.homePageLink}
+      <Link
+         className="w-20 h-20 cursor-pointer"
+        to={'/'}
       >
-        <img className="w-20 h-20 cursor-pointer" src={data.logo} alt="logo" />
-      </a>
+        <img  src={data.logo} alt="logo" />
+      </Link>
 
       <div
         className={`${isMenuOpen ? 'flex' : 'hidden'} not-lg:flex-col lg:gap-12 md:gap-5 sm:gap-5 gap-4 font-sans 

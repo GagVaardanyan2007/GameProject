@@ -7,6 +7,7 @@ export const navbar = {
     logo: "\gameslogo.jpeg",
     homePageLink:'#home',
      links:[
+                { title: "Home", path: "#home" },
                 { title: "About Us", path: "#about" },
                 { title: "Leaderboard", path: "#leaderboard" },
                 { title: "News", path: "#news" },
@@ -17,8 +18,7 @@ export const navbar = {
               
     icons: [
         { 
-        icon:  MdOutlineMenuOpen(), action: "Menu",
-        path:"/"
+        icon:  MdOutlineMenuOpen(), action: "Menu"
         },
         { 
         icon: LuSunMoon(), action: "toggleTheme"
