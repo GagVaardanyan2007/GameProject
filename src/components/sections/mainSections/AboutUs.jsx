@@ -11,7 +11,7 @@ export default function AboutUs( { data } ) {
             <li  key={index} className='font-desc font-bold lg:text-xl text-md text-description'>{elem}</li>
             ))}
           </ul>
-          <div className='shadow-black shadow-xl rounded-xl overflow-hidden '>
+          <div className='shadow-black w-3/2 shadow-xl rounded-xl overflow-hidden '>
             <img className='w-full  hover:scale-105 transition-all ease-in-out duration-500 overflow-hidden object-cover' src={data.img} alt="" />
           </div>
         </div>

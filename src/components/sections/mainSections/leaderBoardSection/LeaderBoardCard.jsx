@@ -8,7 +8,7 @@ export default function LeaderBoardCard( { data } ) {
   }
 
   return (
-    <div className="flex justify-between gap-20 text-center ">
+    <div className="flex justify-between gap-20  ">
       {data.card.map((elem, index) => (
         <div
           key={index}
@@ -25,20 +25,20 @@ export default function LeaderBoardCard( { data } ) {
               <p className="font-desc font-bold text-xl text-des text-gray-400">{elem.description}</p>
               <button
                 onClick={() => toggleOpen(index)}
-                className="relative border-2 border-yellow-600  rounded-4xl shadow-xl shadow-black font-bold uppercase
+                className="relative border-2 border-yellow-600  rounded-4xl shadow-xl shadow-black font-bold uppercase cursor-pointer
                     bg-gray-200/80 hover:bg-yellow-600 hover:text-white transition-colors duration-500 w-fit px-6 mx-auto py-2 flex items-center gap-3"
               >
                 {elem.btnTitle} {elem.icon}
               </button>
             </div>
             <div
-              className={`w-full h-full bg-black/95 text-white absolute flex-col left-0 p-5 transition-all duration-700 ${
+              className={`w-full h-full bg-black/95 text-white rounded-3xl absolute flex-col left-0 p-5 transition-all duration-700 ${
                 openIndex === index ? "top-0 opacity-100 flex" : "-top-1/2 opacity-0"
               }`}
             >
               <button
                 onClick={() => toggleOpen(index)}
-                className="text-2xl font-bold border-2 border-white w-fit py-2 px-4 rounded-full"
+                className="text-2xl font-bold border-2 w-fit  border-white   py-2 px-4 rounded-full"
               >
                 X
               </button>
