@@ -50,4 +50,5 @@ export const leaderBoard = {
         ],
         descriptionN2:"Our top players have proven their skills and earned their place on the leaderboard! Click the button below to see the full list and find out who’s ruling the game right now",
         btnTitle:"Learn More",
+        path:"/leaderboard"
      }

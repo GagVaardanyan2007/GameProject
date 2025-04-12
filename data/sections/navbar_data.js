@@ -25,7 +25,7 @@ export const navbar = {
         },
         { 
         icon: IoMdLogIn(), action: "Log-in" ,
-        path:"/LogIn"
+        path:"/register"
         },
         
     ],

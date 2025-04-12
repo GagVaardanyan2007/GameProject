@@ -45,7 +45,7 @@ export default function Navbar({ data }) {
               setIsMenuOpen(false); 
             }}
             className={`${
-              index === 0
+              index == 0
                 ? 'before:rounded-lg before:bg-yellow-600 before:w-full before:top-7 before:h-1 before:absolute'
                 : 'before:rounded-lg before:bg-yellow-600 before:w-0 before:top-7 before:h-1 before:absolute hover:before:w-full before:transition-all ease-in-out duration-1000'
             } w-fit relative cursor-pointer`}
